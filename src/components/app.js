@@ -39,7 +39,7 @@ export default class App extends React.Component {
     );
   }
 
-  createTask(task){
+  createTask(task) {
     this.state.todos.push({
       task,
       isCompleted: false
