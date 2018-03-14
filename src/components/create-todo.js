@@ -51,7 +51,7 @@ export default class TodosList extends React.Component {
   validateInput(task) {
     if (!task) {
       return 'Please enter a task!';
-    } else if (_.find(this.props.state, todo => todo.task === task)) {
+    } else if (_.find(this.props.todos, todo => todo.task === task)) {
       return 'The task already exists!';
     } else {
       return null;
