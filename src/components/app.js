@@ -26,7 +26,11 @@ export default class App extends React.Component {
       <div>
         <h1>Todos</h1>
         <CreateTodo createTask={this.createTask.bind(this)}/>
-        <TodosList todos={this.state.todos}/>
+        <TodosList
+          todos={this.state.todos}
+          // Pass the toggleTask funstion to TodosList
+          toggleTask={this.toggleTask.bind(this)}
+        />
       </div>
     );
   }
@@ -36,6 +40,13 @@ export default class App extends React.Component {
       task,
       isCompleted: false
     });
+    this.setState({ todos: this.state.todos });
+  }
+
+  toggleTask(task) {
+    // Find a todo to toggle the isCompleted status
+    const foundTodo = _.find(this.state.todos, todo => todo.task === task);
+    foundTodo.isCompleted = !foundTodo.isCompleted;
     this.setState({ todos: this.state.todos });
   }
 }
