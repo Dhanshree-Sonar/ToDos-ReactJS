@@ -1,6 +1,7 @@
 import React from "react";
 import CreateTodo from './create-todo'
 import TodosList from './todos-list';
+require("../../styles/index.css");
 
 const todos = [
   {
@@ -23,7 +24,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='todo-app'>
         <h1>Todos</h1>
         <CreateTodo todos={this.state.todos}
           createTask={this.createTask.bind(this)}
