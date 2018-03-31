@@ -1,3 +1,12 @@
 body {
   font-family: sans-serif, Georgia, serif;
 }
+
+input {
+  display: inline;
+  float: left;
+}
+
+button {
+  display: inline;
+}
