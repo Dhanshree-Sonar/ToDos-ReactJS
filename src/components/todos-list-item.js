@@ -11,7 +11,7 @@ export default class TodosListItem extends React.Component {
   renderTaskSection() {
     const { task, isCompleted } = this.props;
     const taskStyle = {
-      color: isCompleted ? 'green' : 'red',
+      'text-decoration': isCompleted ? 'none' : 'line-through',
       cursor: 'pointer'
     }
 
