@@ -25,7 +25,7 @@ export default class TodosList extends React.Component {
     return (
       <form onSubmit={this.handleCreate.bind(this)} className="w3-padding">
         <input type="text" placeholder="What do I need to do?" ref="createInput"
-        className="w3-margin-right"/>
+        className="w3-margin-right w3-text-indigo"/>
         <button>Create</button>
         {this.renderError()}
       </form>
