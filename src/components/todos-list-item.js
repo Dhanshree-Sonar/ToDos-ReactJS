@@ -38,16 +38,26 @@ export default class TodosListItem extends React.Component {
     if (this.state.isEditing) {
       return (
         <td>
-          <button onClick={this.onSaveClick.bind(this)}>Save</button>
-          <button onClick={this.onCancelClick.bind(this)}>Cancel</button>
+          <button onClick={this.onSaveClick.bind(this)}
+          className="w3-button w3-white w3-text-indigo w3-round-large">
+            Save
+          </button>
+          <button onClick={this.onCancelClick.bind(this)}
+          className="w3-button w3-white w3-text-indigo w3-round-large">
+            Cancel
+          </button>
         </td>
       );
     }
 
     return (
       <td>
-        <button onClick={this.onEditClick.bind(this)}>Edit</button>
-        <button onClick={this.props.deleteTask.bind(this, this.props.task)}>
+        <button onClick={this.onEditClick.bind(this)}
+        className="w3-button w3-white w3-text-indigo w3-round-large">
+          Edit
+        </button>
+        <button onClick={this.props.deleteTask.bind(this, this.props.task)}
+        className="w3-button w3-white w3-text-indigo w3-round-large">
           Delete
         </button>
       </td>
