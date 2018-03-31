@@ -19,7 +19,8 @@ export default class TodosListItem extends React.Component {
       return (
         <td>
           <form onSubmit={this.onSaveClick.bind(this)}>
-            <input type="text" defaultValue={task} ref="editInput" />
+            <input type="text" defaultValue={task} ref="editInput"
+            className="w3-margin-right w3-text-indigo w3-input w3-round-large"/>
           </form>
         </td>
       );
