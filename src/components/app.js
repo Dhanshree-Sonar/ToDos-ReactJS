@@ -24,7 +24,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="todo-app w3-container w3-display-middle w3-text-indigo w3-padding">
+      <div className="todo-app w3-container w3-display-middle w3-padding w3-panel w3-border w3-round-xlarge w3-indigo">
         <h1>Todos</h1>
         <CreateTodo todos={this.state.todos}
           createTask={this.createTask.bind(this)}
