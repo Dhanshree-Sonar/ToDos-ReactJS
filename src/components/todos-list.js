@@ -15,7 +15,7 @@ export default class TodosList extends React.Component {
 
   render() {
     return (
-      <table>
+      <table className="w3-padding">
         <TodosListHeader />
         <tbody>
           {this.renderTodos()}
