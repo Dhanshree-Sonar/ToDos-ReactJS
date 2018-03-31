@@ -39,7 +39,7 @@ export default class TodosListItem extends React.Component {
       return (
         <td>
           <button onClick={this.onSaveClick.bind(this)}
-          className="w3-button w3-white w3-text-indigo w3-round-large">
+          className="w3-button w3-white w3-text-indigo w3-round-large w3-margin-right">
             Save
           </button>
           <button onClick={this.onCancelClick.bind(this)}
@@ -53,7 +53,7 @@ export default class TodosListItem extends React.Component {
     return (
       <td>
         <button onClick={this.onEditClick.bind(this)}
-        className="w3-button w3-white w3-text-indigo w3-round-large">
+        className="w3-button w3-white w3-text-indigo w3-round-large w3-margin-right">
           Edit
         </button>
         <button onClick={this.props.deleteTask.bind(this, this.props.task)}
